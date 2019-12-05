@@ -1,0 +1,25 @@
+  if((SM_issued_last_cycle[l]/DVFS_freq)>1.6)
+  {
+  SM_freq[l] =700;
+  voltage[l] = 1;
+  }
+  else if((SM_issued_last_cycle[l]/DVFS_freq)>1.4)
+  {
+  SM_freq[l] =650;
+  voltage[l] = 0.92;
+  }
+  else if((SM_issued_last_cycle[l]/DVFS_freq)>1.2)
+  {
+  SM_freq[l] =600;
+  voltage[l] = 0.86;
+  }
+  else if((SM_issued_last_cycle[l]/DVFS_freq)>1.0)
+  {
+  SM_freq[l] =550;
+  voltage[l] = 0.8;
+  }
+  else
+  {
+  SM_freq[l] =300;
+  voltage[l] = 0.45;
+  }
